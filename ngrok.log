@@ -1,0 +1,52 @@
+t=2024-04-26T21:51:36+0530 lvl=info msg="no configuration paths supplied"
+t=2024-04-26T21:51:36+0530 lvl=info msg="using configuration at default config path" path=/home/kordorpyrbot/snap/ngrok/148/.config/ngrok/ngrok.yml
+t=2024-04-26T21:51:36+0530 lvl=info msg="open config file" path=/home/kordorpyrbot/snap/ngrok/148/.config/ngrok/ngrok.yml err=nil
+t=2024-04-26T21:51:36+0530 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+t=2024-04-26T21:51:36+0530 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041 allow_hosts=[]
+t=2024-04-26T21:51:37+0530 lvl=eror msg="failed to reconnect session" obj=tunnels.session err="authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple tunnels on a single agent sessit=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/status id=117efb472bf8c62e
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/status id=117efb472bf8c62e status=200 dur=215.983µs
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/static/css/app.adf18cf630a45f8cb520.css id=8124b450b92d648e
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/static/js/vendor.d7e6506ba6b9826fd77a.js id=0207e2809a309e71
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/static/js/app.17e190cb536780ea42b0.js id=b779eb539d44a37d
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/static/js/rpx.27bb9678091ac140b85f.js id=8f31f00e02658cfc
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/static/css/app.adf18cf630a45f8cb520.css id=8124b450b92d648e status=200 dur=4.220532ms
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/static/js/app.17e190cb536780ea42b0.js id=b779eb539d44a37d status=200 dur=2.412558ms
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/static/js/rpx.27bb9678091ac140b85f.js id=8f31f00e02658cfc status=200 dur=2.412837ms
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/static/js/vendor.d7e6506ba6b9826fd77a.js id=0207e2809a309e71 status=200 dur=3.964445ms
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=349ebb74c902558d
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=349ebb74c902558d status=200 dur=577.183µs
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/grpc/agent.Web/State id=200d91bb44751aff
+t=2024-04-26T21:51:45+0530 lvl=info msg=start pg=/static/favicon.ico id=69c9e67fa3027d64
+t=2024-04-26T21:51:45+0530 lvl=info msg=end pg=/static/favicon.ico id=69c9e67fa3027d64 status=200 dur=105.061µs
+t=2024-04-26T21:58:11+0530 lvl=info msg="received remote stop" obj=tunnels.session
+t=2024-04-26T21:58:11+0530 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=38fd5e8982ad err="reconnecting session closed"
+t=2024-04-26T21:58:11+0530 lvl=info msg="no more state changes" obj=tunnels.session
+t=2024-04-26T21:58:11+0530 lvl=info msg="failed to accept connection: Listener closed" obj=tunnels.session clientid=b6bdf84ef80ca1c65188a7549f81dca2
+t=2024-04-26T21:58:11+0530 lvl=warn msg="Stopping forwarder" name=command_line acceptErr="failed to accept connection: Listener closed"
+t=2024-04-26T21:58:11+0530 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2024-04-26T21:58:11+0530 lvl=warn msg="Error restarting forwarder" name=command_line err="failed to start tunnel: session closed"
+t=2024-04-26T21:58:11+0530 lvl=info msg="session closing" obj=tunnels.session err=nil
+ev
+  ngrok tcp 22                                                  # tunnel arbitrary TCP traffic to port 22
+  ngrok http 80 --oauth=google --oauth-allow-email=foo@foo.com  # secure your app with oauth
+
+Paid Features: 
+  ngrok http 80 --domain mydomain.com                           # run ngrok with your own custom domain
+  ngrok http 80 --allow-cidr 2600:8c00::a03c:91ee:fe69:9695/32  # run ngrok with IP policy restrictions
+  Upgrade your account at https://dashboard.ngrok.com/billing/subscription to access paid features
+
+Upgrade your account at https://dashboard.ngrok.com/billing/subscription to access paid features
+
+Flags:
+  -h, --help      help for ngrok
+
+Use "ngrok [command] --help" for more information about a command.
+
+ERROR:  authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.
+ERROR:  You can run multiple tunnels on a single agent session using a configuration file.
+ERROR:  To learn more, see https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config/
+ERROR:  You can view your current agent sessions in the dashboard:
+ERROR:  https://dashboard.ngrok.com/tunnels/agents
+ERROR:  
+ERROR:  ERR_NGROK_108
+ERROR:  
