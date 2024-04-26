@@ -6,7 +6,8 @@
  1. Visit this link below:
 	https://54b8-2405-201-ac04-e101-4aee-2b80-ee94-673c.ngrok-free.app
 	
- 2. Use Postman or Curl Command to test the endpoints
+ 2. Use Postman or Curl Command to test the following endpoint
+
 	For example : 
 	
 	https://54b8-2405-201-ac04-e101-4aee-2b80-ee94-673c.ngrok-free.app/principal/assignments/
